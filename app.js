@@ -1,18 +1,14 @@
 const currentTime = document.querySelector(".time");
 const amPm = document.querySelector(".am-pm");
 const date = document.querySelector(".date");
-const year = document.querySelector("#year");
-console.log(year);
 
 const getCurrentTime = () => {
   let currentDate =
     Date().split("0", "1") + " " + new Date().toLocaleDateString();
-
   date.innerHTML = currentDate;
   let time = Date().split(" ")[4];
   currentTime.innerHTML = time;
-  // let currentYear = new Date().getFullYear();
-  // year.innerHTML = currentYear;
+
   if (new Date().getHours < 12) {
     amPm.innerHTML = "AM";
   } else {
