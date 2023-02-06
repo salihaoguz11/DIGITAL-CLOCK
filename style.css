@@ -1,0 +1,21 @@
+* {
+  background-color: black;
+}
+
+.container {
+  color: aqua;
+
+  margin: 15vh auto;
+
+  text-align: center;
+
+  font-size: 5rem;
+}
+.time,
+.am-pm {
+  font-weight: bold;
+}
+
+.am-pm {
+  margin-left: 10px;
+}
